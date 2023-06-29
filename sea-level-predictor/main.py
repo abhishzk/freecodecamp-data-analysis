@@ -1,3 +1,4 @@
+from unittest import main
 import sea_level_predictor
 
 # Path to the data file
@@ -8,3 +9,6 @@ sea_level_predictor.plot_sea_level(data_file)
 
 # Generate and save the second plot
 sea_level_predictor.plot_sea_level_since_2000(data_file)
+
+# Run unit tests automatically
+main(module='test_module', exit=False)

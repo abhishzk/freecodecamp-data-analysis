@@ -1,3 +1,4 @@
+from unittest import main
 from demographic_data_analyzer import calculate_demographic_data
 
 # Run the calculate_demographic_data function and print the results
@@ -12,3 +13,6 @@ print("\nMinimum number of hours worked per week:", demographic_data['min_work_h
 print("\nPercentage of people working the minimum number of hours per week earning more than 50K:", demographic_data['rich_percentage'])
 print("\nCountry with the highest percentage of people earning more than 50K:", demographic_data['highest_earning_country'])
 print("\nPercentage of people earning more than 50K in the highest earning country:", demographic_data['highest_earning_percentage'])
+
+# Run unit tests automatically
+main(module='test_module', exit=False)

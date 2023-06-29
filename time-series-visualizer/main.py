@@ -1,3 +1,4 @@
+from unittest import main
 import time_series_visualizer
 
 # Path to the data file
@@ -11,3 +12,6 @@ time_series_visualizer.draw_bar_plot(data_file)
 
 # Generate and save the box plots
 time_series_visualizer.draw_box_plot(data_file)
+
+# Run unit tests automatically
+main(module='test_module', exit=False)
